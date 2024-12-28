@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": "./", // Define o diretório base
+    "paths": {
+      "@src/*": ["src/*"], // Alias para o diretório src
+      "@controllers/*": ["src/controllers/*"], // Alias para controllers
+      "@models/*": ["src/models/*"] // Alias para models
+    }
+    // "exclude": ["node_modules"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
